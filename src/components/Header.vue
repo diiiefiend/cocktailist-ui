@@ -2,14 +2,21 @@
   <div id="header">
     <div class="container clearfix">
       <a href="/"><img src="/images/logo.png" id="logo" alt="cocktailist"/></a>
-      <div id="search"></div>
+      <div id="search">
+        <input type="text" class="header-search" placeholder="search" />
+      </div>
       <div id="user-menu">
         <img src="/images/user.png" alt="user menu" />
-        <ul></ul>
+        <ul>
+          <li><router-link to="/login">Log In</router-link></li>
+        </ul>
       </div>
       <ul id="nav">
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/">Browse</router-link></li>
+        <li><router-link to="/">Feed</router-link></li>
+        <li><router-link to="/">Lists</router-link></li>
+        <li><router-link to="/">Analytics</router-link></li>
+        <li><router-link to="/">Add Entry</router-link></li>
       </ul>
     </div>
   </div>
