@@ -1,0 +1,33 @@
+#footer{
+    border-top: 1px solid #130503;
+    background: white;
+    height: 50px;
+    color: black;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  
+    *{
+      padding-top: 5px;
+      margin-bottom: -2px;
+    }
+  
+    p{
+      float: left;
+      font-size: 14px;
+      width: 90%;
+    }
+  
+    a.toplink{
+      font-size: 24px;
+      float: right;
+    }
+
+    a{
+        color: black;
+
+        &:hover{
+            color: #cc8042;
+        }
+    }
+}
