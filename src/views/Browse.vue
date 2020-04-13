@@ -2,13 +2,13 @@
   <div id="browse">
     <!-- 
       structure:
-      main-container component
+      layout-container component
         map component
         content-block component
-      side-container component
+      layout-container component
         content-block component
      -->
-    <div class="left wide">
+    <layout-container :is-left-side="true" :width="2">
       <h1 class="capitalize">Heat Map</h1>
       <div class="map-tip">click marker to zoom</div>
 
@@ -23,21 +23,25 @@
         <h2>Latest additions</h2>
         <ul class="category-show-list clearfix"></ul>
       </div>
-    </div>
+    </layout-container>
 
     <div class="rule-right"></div>
-    <div class="right bar"></div>
+    <layout-container :is-left-side="false" :width="1">
+      <div class="box">
+        <h1>Browse by:</h1>
+      </div>
+    </layout-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
+import LayoutContainer from "@/components/LayoutContainer.vue";
 
 export default {
-  name: "Home",
+  name: "Browse",
   components: {
-    // HelloWorld
+    LayoutContainer
   }
 };
 </script>

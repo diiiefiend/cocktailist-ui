@@ -1,0 +1,33 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.wide {
+  padding: 25px;
+  // width: 625px;
+  width: calc(100% - 2% - 50px - 30%);
+
+  .left{
+    margin-right: 4%;
+  }
+
+  .right{
+    margin-left: 4%;
+  }
+}
+
+.narrow {
+  padding: 25px;
+  // width: 225px;
+  width: calc(30% - 2% - 50px);
+}
+
+// for single column elements (currently just the add/edit cocktail form)
+.single-col{
+  margin: 25px auto;
+  width: 80%;
+}

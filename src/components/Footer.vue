@@ -32,5 +32,5 @@ export default class Footer extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "@/assets/styles/footer.scss";
+@import "@/assets/styles/components/footer.scss";
 </style>
