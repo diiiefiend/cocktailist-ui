@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
-    <div class="container clearfix">
-      <p>
+    <div class="grid-container">
+      <p class="credits">
         Made by
         <a href="http://github.com/diiiefiend" target="_blank">Ariel Hou</a
         >.<br />
@@ -16,7 +16,9 @@
           >.</span
         >
       </p>
-      <a href="javascript:void(0);" class="toplink scrollToTop">top</a>
+      <div class="quicklinks">
+        <a href="javascript:void(0);" class="toplink scrollToTop">top</a>
+      </div>
     </div>
   </div>
 </template>

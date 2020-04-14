@@ -1,11 +1,9 @@
 <template>
-  <div id="app main">
+  <div id="app">
     <Header msg="test" />
 
     <div id="content">
-      <div id="js-main" class="container clearfix">
-        <router-view />
-      </div>
+      <router-view />
     </div>
 
     <Footer msg="test" />

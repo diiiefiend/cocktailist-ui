@@ -3,7 +3,7 @@
 //     position: relative;
 //   }
 
-#main{
+#app{
   min-height: 100vh;
   position: relative;
 }
@@ -13,10 +13,14 @@
   border-top: 1px solid #cc8042;
   padding: 10px 0 60px 0;
 
-  .container{
-    position: relative;
+  .grid-container{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 25px auto;
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 10px;
+    grid-template-rows: 1fr;
   }
 
   .box{
@@ -143,28 +147,6 @@
 }
 
 /* general classes stuff */
-.container{
-  width: calc(100% - 100px);
-  margin: 0 auto;
-  padding: 0 50px;
-}
-
-[class*="rule-"]:before{
-  display: block;
-  position: absolute;
-  background: #4c311c;
-  top: 25px;
-  bottom: 25px;
-  width: 1px;
-  content: "";
-}
-.rule-left:before{
-  left: 32%;
-}
-.rule-right:before{
-  right: 32%;
-}
-
 .clearfix:after, .box:after{
   clear: both;
   display: block;

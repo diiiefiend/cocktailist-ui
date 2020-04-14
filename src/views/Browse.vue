@@ -1,5 +1,5 @@
 <template>
-  <div id="browse">
+  <div id="browse" class="grid-container">
     <!-- 
       structure:
       layout-container component
@@ -25,7 +25,7 @@
       </div>
     </layout-container>
 
-    <div class="rule-right"></div>
+    <!-- <div class="rule-right"></div> -->
     <layout-container :is-left-side="false" :width="1">
       <div class="box">
         <h1>Browse by:</h1>

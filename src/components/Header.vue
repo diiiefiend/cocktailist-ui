@@ -1,15 +1,11 @@
 <template>
   <div id="header">
-    <div class="container clearfix">
-      <a href="/"><img src="/images/logo.png" id="logo" alt="cocktailist"/></a>
+    <div class="grid-container">
+      <div id="logo">
+        <a href="/"><img src="/images/logo.png" alt="cocktailist"/></a>
+      </div>
       <div id="search">
         <input type="text" class="header-search" placeholder="search" />
-      </div>
-      <div id="user-menu">
-        <img src="/images/user.png" alt="user menu" />
-        <ul>
-          <li><router-link to="/login">Log In</router-link></li>
-        </ul>
       </div>
       <ul id="nav">
         <li><router-link to="/">Browse</router-link></li>
@@ -18,6 +14,12 @@
         <li><router-link to="/">Analytics</router-link></li>
         <li><router-link to="/">Add Entry</router-link></li>
       </ul>
+      <div id="user-menu">
+        <img src="/images/user.png" alt="user menu" />
+        <ul>
+          <li><router-link to="/login">Log In</router-link></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
