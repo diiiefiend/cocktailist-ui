@@ -15,12 +15,12 @@
   padding: 0 25px;
   grid-column-end: span 3;
 
-  &.left{
+  &.left {
     grid-column-start: 1;
     border-right: 1px solid #4c311c;
   }
 
-  &.right{
+  &.right {
     grid-column-start: 8;
     border-left: 1px solid #4c311c;
   }

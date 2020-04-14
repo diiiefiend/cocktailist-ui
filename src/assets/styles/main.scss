@@ -1,8 +1,3 @@
-//  #window{
-//     height: 100vh;
-//     position: relative;
-//   }
-
 #app{
   min-height: 100vh;
   position: relative;
@@ -21,91 +16,6 @@
     grid-template-columns: repeat(10, 1fr);
     column-gap: 10px;
     grid-template-rows: 1fr;
-  }
-
-  .box{
-    background: url($box-path);
-    margin-bottom: 20px;
-    padding: 20px;
-    line-height: 200%;
-  }
-
-  .header-box{
-    background: white;
-    color: black;
-    padding: 5px 10px;
-  }
-
-  .box .header-box{
-    margin-left: -20px;
-    margin-right: -20px;
-
-    a:hover{
-      color: black;
-    }
-  }
-}
-
-.bar {
-  h1{
-    font-size: 24px;
-  }
-
-  h2{
-    font-size: 20px;
-  }
-
-  ul{
-    list-style: none;
-
-    li:first-letter{
-      text-transform: uppercase;
-    }
-  }
-}
-
-#bar-map{
-  width: 180px;
-  height: 200px;
-  float: left;
-  margin-right: 15px;
-  border: 5px solid #aaa;
-
-  &.wide-map{
-    width: calc(100% - 10px);
-  }
-
-  .map-info{
-    font: 14px 'ChaparralPro', 'Palatino', serif;
-    overflow-y: hidden;
-  }
-}
-
-.right.bar #bar-map {
-  width: 100%;
-}
-
-.map-tip{
-  float: right;
-  margin-top: -20px;
-  color: #000;
-  font-size: 24px;
-}
-
-.bar-info {
-  ul{
-    list-style: none;
-    margin: 0;
-    line-height: 100%;
-    text-transform: lowercase;
-    font-variant: small-caps;
-  }
-
-  .first-word{
-    display: inline-block;
-    width: 25px;
-    text-align: right;
-    color: #aaa;
   }
 }
 
@@ -223,54 +133,6 @@ img.feed-img{
   }
 }
 
-.category-show-list li{
-  float: left;
-  margin-right: 12px;
-  margin-bottom: 15px;
-  line-height: 100%;
-  list-style: none;
-}
-.category-show-list li:hover .cat-show-item{
-  border-color: white;
-}
-.category-show-list .cat-show-item{
-  position: relative;
-  height: 150px;
-  width: 100px;
-  background: #111;
-  overflow: hidden;
-  border: 3px solid #aaa;
-}
-.category-show-list .cat-show-item:after{
-  z-index: 1;
-  content: attr(title);
-  font-size: 12px;
-  line-height: normal;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #aaa;
-  background: black;
-  opacity: 0.75;
-  height: 40px;
-  width: 100%;
-}
-.category-show-list li:hover .cat-show-item:after{
-  color: white;
-}
-
-.category-show-list li.standalone{
-  margin-left: 30px;
-}
-
-.category-show-list li img.thumb{
-  width: 100px;
-}
-
-.category-show-list .rating{
-  margin: 5px 0 0 10px;
-}
-
 .filter-list{
   font-size: 20px;
   list-style: none;
@@ -307,10 +169,6 @@ a.remove-item:hover{
 .bolded{
   font-weight: bold;
   color: white;
-}
-
-.capitalize{
-  text-transform: capitalize;
 }
 
 .subtext{
