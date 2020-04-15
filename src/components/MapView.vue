@@ -10,7 +10,7 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 @Component
 export default class MapView extends Vue {
   @Prop() private isWide!: boolean;
-  // will prob add options to show bar-info
+  // will prob add options to toggle showing bar-info
 }
 </script>
 

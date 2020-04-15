@@ -36,11 +36,41 @@ export default {
   data: function() {
     return {
       cocktails: [
-        { id: "1" },
-        { id: "2" },
-        { id: "3" },
-        { id: "4" },
-        { id: "5" }
+        {
+          id: "1",
+          img:
+            "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
+          bar: "wherever",
+          rating: 1.5
+        },
+        {
+          id: "2",
+          img:
+            "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
+          bar: "wherever",
+          rating: 2.2
+        },
+        {
+          id: "3",
+          img:
+            "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
+          bar: "wherever",
+          rating: 3.8
+        },
+        {
+          id: "4",
+          img:
+            "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
+          bar: "wherever",
+          rating: 4.3
+        },
+        {
+          id: "5",
+          img:
+            "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
+          bar: "wherever",
+          rating: 5
+        }
       ]
     };
   }

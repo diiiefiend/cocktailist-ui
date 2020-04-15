@@ -1,25 +1,20 @@
 li{
-  float: left;
-  margin-right: 12px;
-  margin-bottom: 15px;
   line-height: 100%;
   list-style: none;
 }
 
-li:hover .cat-show-item{
+li:hover .cocktail-item{
   border-color: white;
 }
 
-.cat-show-item{
+.cocktail-item {
   position: relative;
-  height: 150px;
-  width: 100px;
   background: #111;
   overflow: hidden;
   border: 3px solid #aaa;
 }
 
-.cat-show-item:after{
+.cocktail-item:after{
   z-index: 1;
   content: attr(title);
   font-size: 12px;
@@ -34,14 +29,10 @@ li:hover .cat-show-item{
   width: 100%;
 }
 
-li:hover .cat-show-item:after{
+li:hover .cocktail-item:after{
   color: white;
 }
 
 li img.thumb{
   width: 100px;
-}
-
-.rating{
-  margin: 5px 0 0 10px;
 }

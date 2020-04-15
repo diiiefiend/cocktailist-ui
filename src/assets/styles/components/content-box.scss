@@ -7,18 +7,19 @@
   line-height: 200%;
 }
 
-.header-box{
+.header-box {
   background: white;
   color: black;
   padding: 5px 10px;
-}
-
-.box .header-box{
   margin-left: -20px;
   margin-right: -20px;
 
   a:hover{
     color: black;
+  }
+
+  h1 {
+    margin-bottom: 15px;
   }
 }
 

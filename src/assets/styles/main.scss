@@ -19,20 +19,6 @@
   }
 }
 
-.rating{
-  background: url($rating-path) no-repeat 0 4px;
-  overflow: hidden;
-  min-width: 86px;
-  height: 20px;
-  display: inline-block;
-  position: relative;
-
-  img{
-    float: left;
-    margin-top: 4px;
-  }
-}
-
 .rating-click-box{
   width: 17px;
   height: 100%;

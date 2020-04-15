@@ -1,5 +1,5 @@
 <template>
-  <ul class="category-show-list">
+  <ul class="grid-cocktails">
     <cocktail-item
       v-for="entry in cocktails"
       :key="entry.id"

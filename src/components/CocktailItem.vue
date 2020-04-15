@@ -1,13 +1,26 @@
 <template>
-  <li>{{ cocktail.id }}</li>
+  <li>
+    <a href="#">
+      <div class="cocktail-item" :title="imageLabel">
+        <img class="thumb" :src="cocktail.img" :alt="cocktail.id" />
+      </div>
+      <rating :rating-value="cocktail.rating"></rating>
+    </a>
+  </li>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import Rating from "@/components/Rating.vue";
 
-@Component
+@Component({
+  components: {
+    Rating
+  }
+})
 export default class CocktailItem extends Vue {
-  @Prop() private cocktail!: object;
+  @Prop() private cocktail!: any;
+  imageLabel = `${this.cocktail.id} @ ${this.cocktail.bar}`;
 }
 </script>
 
