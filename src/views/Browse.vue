@@ -14,6 +14,9 @@
       <content-box title="Browse by:" :is-narrow="true">
         beep boop
       </content-box>
+      <content-box title="Liquor:" :is-narrow="true">
+        beep boop
+      </content-box>
     </layout-container>
   </div>
 </template>

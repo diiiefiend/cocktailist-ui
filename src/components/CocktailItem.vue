@@ -1,11 +1,11 @@
 <template>
   <li>
-    <a href="#">
+    <router-link to="/cocktail">
       <div class="cocktail-item" :title="imageLabel">
         <img class="thumb" :src="cocktail.img" :alt="cocktail.id" />
       </div>
-      <rating :rating-value="cocktail.rating"></rating>
-    </a>
+      <rating :rating-value="cocktail.rating" />>
+    </router-link>
   </li>
 </template>
 
