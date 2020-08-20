@@ -3,7 +3,18 @@ $font2-path:    '/fonts/montserrat_bold.otf';
 $font3-path:    '/fonts/chaparralpro_reg.otf';
 $font4-path:    '/fonts/chaparralpro_bold.otf';
 
-$body-path:     '/images/contbg.jpg';
+// images
+$body-path:     '/images/deco-header-bg.jpg';
 $box-path:      '/images/boxbg.jpg';
 $rating-path:   '/images/rating-empty.png';
 $napkin-path:   '/images/imgborderbg-black.png';
+
+// colors
+$white: #fff;
+$dark-gray: #1B1B1A;
+$gold: #D8C263;
+$emerald: #154C38;
+$dark-green: #132A13;
+
+// dimensions
+$header-height: 50px;

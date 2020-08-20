@@ -1,27 +1,16 @@
 <template>
-  <div id="header">
-    <div class="grid-container">
-      <div id="logo">
-        <a href="/"><img src="/images/logo.png" alt="cocktailist"/></a>
-      </div>
-      <div id="search">
-        <input type="text" class="header-search" placeholder="search" />
-      </div>
-      <ul id="nav">
-        <li><router-link to="/">Browse</router-link></li>
-        <li><router-link to="/">Feed</router-link></li>
-        <li><router-link to="/">Lists</router-link></li>
-        <li><router-link to="/">Analytics</router-link></li>
-        <li><router-link to="/">Add Entry</router-link></li>
-      </ul>
-      <div id="user-menu">
-        <img src="/images/user.png" alt="user menu" />
-        <ul>
-          <li><router-link to="/login">Log In</router-link></li>
-        </ul>
-      </div>
+  <header class="grid">
+    <div id="logo">
+      <a href="/"><img src="/images/deco-logo.png" alt="cocktailist"/></a>
     </div>
-  </div>
+    <nav>
+      <li><router-link to="/" class="active">Cocktails</router-link></li>
+      <li><router-link to="/">Activity</router-link></li>
+      <li><router-link to="/">Lists</router-link></li>
+      <li><router-link to="/">Data</router-link></li>
+      <li><router-link to="/">Login</router-link></li>
+    </nav>
+  </header>
 </template>
 
 <script lang="ts">

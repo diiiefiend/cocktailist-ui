@@ -1,5 +1,5 @@
 <template>
-  <div id="cocktail" class="grid-container">
+  <div id="cocktail" class="grid">
     <layout-container :is-left-side="true" :width="2">
       <content-box title="Cocktail Name" :has-header="true">
         <cocktail-detail :cocktail="cocktail"></cocktail-detail>

@@ -1,4 +1,5 @@
 #footer{
+  display: none; // until i figure out what to do here
     border-top: 1px solid #130503;
     background: white;
     height: 50px;
@@ -8,7 +9,7 @@
     position: absolute;
     bottom: 0;
 
-    .grid-container {
+    .grid {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       column-gap: 10px;

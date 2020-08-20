@@ -1,120 +1,82 @@
-#header{
-  background: white;
-  border-bottom: 1px solid black;
-  color: black;
-  font: 18px 'ChaparralPro', 'Palatino', serif;
-  height: 75px;
+@import "../_variables.scss";
 
-  .grid-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    column-gap: 10px;
-    grid-template-rows: 1fr;
-
-    &:first-child {
-      padding-left: 10px;
-    }
-
-    &:last-child {
-      padding-right: 10px;
-    }
-  }
+header{
 
   #logo{
     grid-column-start: 1;
     grid-column-end: span 3;
-    padding-top: 23px;
   }
 
-  #search{
-    grid-column-start: 4;
-    grid-column-end: span 2;
-    margin-top: 48px;
-
-    input{
-      font-size: 16px;
-      background: transparent;
-      border-bottom: 2px solid black;
-      width: 150px;
-      color: black;
-      margin-bottom: 0;
-    }
-  }
-
-  #nav{
+  nav{
     grid-column-start: 6;
-    grid-column-end: span 4;
-    justify-self: end;
+    grid-column-end: span 5;
+    // the internal nav grid
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: stretch;
 
-    margin-top: 50px;
     list-style: none;
 
-    li{
-      float: left;
-      margin-right: 20px;
-
-      a.active{
-        font-weight: bold;
-        color: #cc8042;
-      }
-    }
-  }
-
-  #user-menu{
-    grid-column-start: 10;
-    grid-column-end: span 1;
-    justify-self: end;
-
-    margin: 40px 0 -10px;
-    position: relative;
-    display: block;
-
-    ul{
-      list-style: none;
-      font-size: 16px;
-      display: none;
-      position: absolute;
-      z-index: 1;
-      width: 100px;
-      padding: 5px;
-      background: white;
-      left: -43px;
-
-      &:after{
-        content: "";
-        display: none;
-        position: absolute;
-        top: -10px;
-        left: 50px;
-        border-bottom: 10px solid white;
-        border-top: 0 solid white;
-        border-right: 10px solid transparent;
-        border-left: 10px solid transparent;
-      }
-
-      li:first-child{
-        font-size: 14px;
-        color: #aaa;
-      }
-    }
-
-    &:hover ul, &:hover ul:after{
+    a {
+      color: $gold;
       display: block;
+      font: 18px "Baskerville Old Face", "Garamond", serif; // prob need to include Baskerville
+      padding: 15px 0;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+      }
+
+      &.active{
+        background: $dark-green;
+        color: $white;
+        font-weight: bold;
+      }
     }
   }
 
-  a {
-    color: black;
+  // #user-menu{
+  //   grid-column-start: 10;
+  //   grid-column-end: span 1;
+  //   justify-self: end;
 
-    &:hover {
-      color: #cc8042;
-    }
-  }
-  
-  a.grayed, #nav li:last-child a.grayed {
-    color: #ccc;
-  }
+  //   margin: 40px 0 -10px;
+  //   position: relative;
+  //   display: block;
+
+  //   ul{
+  //     list-style: none;
+  //     font-size: 16px;
+  //     display: none;
+  //     position: absolute;
+  //     z-index: 1;
+  //     width: 100px;
+  //     padding: 5px;
+  //     background: white;
+  //     left: -43px;
+
+  //     &:after{
+  //       content: "";
+  //       display: none;
+  //       position: absolute;
+  //       top: -10px;
+  //       left: 50px;
+  //       border-bottom: 10px solid white;
+  //       border-top: 0 solid white;
+  //       border-right: 10px solid transparent;
+  //       border-left: 10px solid transparent;
+  //     }
+
+  //     li:first-child{
+  //       font-size: 14px;
+  //       color: #aaa;
+  //     }
+  //   }
+
+  //   &:hover ul, &:hover ul:after{
+  //     display: block;
+  //   }
+  // }
 }

@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <div class="grid-container">
+    <div class="grid">
       <p class="credits">
         Made by
         <a href="http://github.com/diiiefiend" target="_blank">Ariel Hou</a
