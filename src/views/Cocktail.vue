@@ -23,20 +23,20 @@
 
 <script>
 // @ is an alias to /src
-import LayoutContainer from "@/components/LayoutContainer.vue";
-import ContentBox from "@/components/ContentBox.vue";
-import MapView from "@/components/MapView.vue";
-import CocktailItem from "@/components/CocktailItem.vue";
-import CocktailDetail from "@/components/CocktailDetail.vue";
+// import LayoutContainer from "@/components/LayoutContainer.vue";
+// import ContentBox from "@/components/ContentBox.vue";
+// import MapView from "@/components/MapView.vue";
+// import CocktailItem from "@/components/CocktailItem.vue";
+// import CocktailDetail from "@/components/CocktailDetail.vue";
 
 export default {
   name: "Browse",
   components: {
-    LayoutContainer,
-    ContentBox,
-    MapView,
-    CocktailItem,
-    CocktailDetail
+    // LayoutContainer,
+    // ContentBox,
+    // MapView,
+    // CocktailItem,
+    // CocktailDetail
   },
   data: function() {
     return {

@@ -3,7 +3,7 @@
     <context-menu>
       <div class="gap-1"></div>
       <div class="span-2 justify-left">
-        <button>Add Cocktail</button>
+        <button class="primary">Add Cocktail</button>
       </div>
       <div class="span-2">
         <select>
@@ -16,10 +16,10 @@
         </select>
       </div>
       <div class="span-3 justify-right">
-        <input class="search" placeholder="I have something in mind" />
+        <input id="search" placeholder="I have something in mind" />
       </div>
       <div class="span-1 justify-right">
-        <button>Search</button>
+        <button class="secondary">Search</button>
       </div>
     </context-menu>
     <!-- <layout-container :is-left-side="true" :width="2">
