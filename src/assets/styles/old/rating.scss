@@ -1,0 +1,22 @@
+@import "../_variables.scss";
+
+.rating {
+  background: url($rating-path) no-repeat 0 4px;
+  display: inline-block;
+  height: 20px;
+  min-width: 86px;
+  margin: 5px 0 0 10px;
+  overflow: hidden;
+  position: relative;
+  
+  img {
+    float: left;
+    margin-top: 4px;
+  }
+
+  .partial {
+    overflow: hidden; 
+    display: inline-block;
+    // width will be computed inline
+  }
+}

@@ -1,0 +1,34 @@
+.wide {
+  padding: 0 25px;
+  grid-column-end: span 7;
+
+  &.left{
+    grid-column-start: 1;
+  }
+
+  &.right{
+    grid-column-start: 4;
+  }
+}
+
+.narrow {
+  padding: 0 25px;
+  grid-column-end: span 3;
+
+  &.left {
+    grid-column-start: 1;
+    border-right: 1px solid #4c311c;
+  }
+
+  &.right {
+    grid-column-start: 8;
+    border-left: 1px solid #4c311c;
+  }
+}
+
+// for single column elements (currently just the add/edit cocktail form)
+.single-col{
+  padding: 0 25px;
+  grid-column-start: 2;
+  grid-column-end: span 8;
+}

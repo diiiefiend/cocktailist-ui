@@ -1,0 +1,155 @@
+#app{
+  min-height: 100vh;
+  position: relative;
+}
+
+/* content area stuff */
+#content{
+  border-top: 1px solid #cc8042;
+  padding: 10px 0 60px 0;
+
+  .grid{
+    max-width: 1000px;
+    margin: 25px auto;
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 10px;
+    grid-template-rows: 1fr;
+  }
+}
+
+.rating-click-box{
+  width: 17px;
+  height: 100%;
+  float: left;
+  position: absolute;
+  z-index: 100;
+}
+.rating-click-box:nth-child(1){
+  left: 0;
+}
+.rating-click-box:nth-child(2){
+  left: 17px;
+}
+.rating-click-box:nth-child(3){
+  left: 34px;
+}
+.rating-click-box:nth-child(4){
+  left: 51px;
+}
+.rating-click-box:nth-child(5){
+  left: 68px;
+}
+
+/* general classes stuff */
+.clearfix:after, .box:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+img#image-preview, img.feed-img{
+  width: 100px;
+  height: auto;
+  float: right;
+  background: black;
+  border: 3px solid white;
+  margin: 0 0 10px 10px;
+  position: relative;
+}
+img#image-preview:hover{
+  opacity: 0.25;
+}
+
+img.feed-img{
+  transform: translateY(-25%);
+  margin-bottom: 0;
+}
+
+#delete-rating{
+  float: right;
+}
+
+.filter-list{
+  font-size: 20px;
+  list-style: none;
+
+  &.filter-list.small{
+    font-size: 16px;
+  }
+}
+
+.under-box-link{
+  position: absolute;
+  right: 0;
+  bottom: -1.4em;
+  font-size: 1.4em;
+  display: none;
+}
+
+.stickied .under-box-link{
+  display: block;
+}
+
+a.remove-item, a.remove-list{
+  display: block;
+  float: right;
+  opacity: 0;
+}
+li:hover a.remove-list, .box:hover a.remove-item{
+  opacity: 1;
+}
+a.remove-item:hover{
+  color: #000;
+}
+
+.bolded{
+  font-weight: bold;
+  color: white;
+}
+
+.subtext{
+  color: #aaa;
+}
+
+.form-control{
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+a.block-link{
+   font: 18px 'Montserrat', sans-serif;
+   background: #000;
+   color: #fff;
+   text-transform: lowercase;
+   font-variant: small-caps;
+   display: block;
+   clear: both;
+   width: 101%;
+   margin: 0 -1px;
+   padding: 5% 0%;
+   text-align: center;
+   font-size: 20px;
+   border-top: 1px solid #eee;
+
+   &:hover{
+     color: #000;
+     background: #fff;
+   }
+ }
+
+/* tag stuff */
+#signinbox a:hover{
+  color: black;
+}
+.wide h1 a{
+  color: #999;
+}
+.wide h1 a:hover{
+  color: #cc8042;
+}
+
+.bar h3{
+  font-weight: normal;
+}

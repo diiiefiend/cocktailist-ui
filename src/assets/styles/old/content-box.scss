@@ -1,0 +1,42 @@
+@import "../_variables.scss";
+
+.box{
+  background: url($box-path);
+  margin-bottom: 20px;
+  padding: 20px;
+  line-height: 200%;
+}
+
+.header {
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  a:hover{
+    color: black;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+  }
+}
+
+.small {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  ul {
+    list-style: none;
+
+    li:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

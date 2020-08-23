@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url($montserrat-path);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url($montserrat-bold-path);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+ font-family: 'LibreBaskerville';
+ src: url($baskerville-path);
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'LibreBaskerville';
+ src: url($baskerville-bold-path);
+ font-weight: bold;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'LibreBaskerville';
+ src: url($baskerville-italic-path);
+ font-weight: normal;
+ font-style: italic;
+}

@@ -1,0 +1,49 @@
+@import "../_variables.scss";
+
+.image-placeholder{
+  min-height: 225px;
+  min-width: 225px;
+  float: right;
+  background: url($napkin-path) no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+
+  img{
+    height: auto;
+    width: 150px;
+    opacity: 1;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+.user-stats{
+  text-align: center;
+  clear: right;
+  float: right;
+  width: 225px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 5px;
+
+  p{
+    margin-bottom: 0;
+  }
+
+  h5{
+    background: white;
+    color: black;
+    padding: 1px;
+    line-height: normal;
+    margin: 5px -5px;
+  }
+
+  ul.add-to-lists{
+    list-style: none;
+    font-size: 14px;
+
+    label{
+      width: auto;
+    }
+  }
+}

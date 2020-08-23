@@ -1,0 +1,43 @@
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $dark-gray url($body-path) repeat-x;
+}
+
+#app {
+  min-width: $app-min-width;
+  max-width: $app-width;
+  margin: 0 auto;
+  font: $font-baseline "Montserrat", sans-serif;
+}
+
+.grid {
+  max-width: $app-width;
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 15px;
+  border: 0;
+
+  &.primary {
+    background: $gold;
+    color: $dark-green;
+  }
+
+  &.secondary {
+    background: $emerald;
+    color: $dark-green;
+  }
+}
+
+input, select {
+  background: transparent;
+  border: 0;
+}

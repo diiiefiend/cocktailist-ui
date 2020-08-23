@@ -1,0 +1,71 @@
+@import "../_variables.scss";
+* {
+  font-size: $font-md;
+}
+
+.grid {
+  height: $context-menu-height;
+  grid-template-rows: .33fr;  // 3 "rows" possible
+  grid-gap: 10px;
+
+  * {
+    justify-self: stretch;
+  }
+
+  .gap {
+    &-1 {
+      grid-column-end: span 10;
+      grid-row-end: span 1;
+    }
+  }
+
+  .span {
+    &-3 {
+      grid-column-end: span 3;
+    }
+
+    &-2 {
+      grid-column-end: span 2;
+    }
+
+    &-1 {
+      grid-column-end: span 1;
+    }
+  }
+  
+  .justify {
+    &-left {
+      justify-self: left;
+    }
+  
+    &-right {
+      justify-self: right;
+    }
+  }
+
+  button {
+    &.primary {
+      background: $gold;
+      color: $dark-green;
+    }
+
+    &.secondary {
+      background: $emerald;
+      color: $dark-green;
+    }
+  }
+
+  select, input {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $emerald;
+    color: $white;
+  }
+
+  input#search {
+    width: 200px;
+    placeholder {
+      color: $emerald;
+    }
+  }
+}
