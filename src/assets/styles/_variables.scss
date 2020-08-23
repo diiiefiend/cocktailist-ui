@@ -1,7 +1,9 @@
-$font1-path:    '/fonts/montserrat_reg.otf';
-$font2-path:    '/fonts/montserrat_bold.otf';
-$font3-path:    '/fonts/chaparralpro_reg.otf';
-$font4-path:    '/fonts/chaparralpro_bold.otf';
+// fonts
+$montserrat-path:         '/fonts/montserrat_reg.otf';
+$montserrat-bold-path:    '/fonts/montserrat_bold.otf';
+$baskerville-path:        '/fonts/LibreBaskerville-Regular.ttf';
+$baskerville-bold-path:   '/fonts/LibreBaskerville-Bold.ttf';
+$baskerville-italic-path:   '/fonts/LibreBaskerville-Italic.ttf';
 
 // images
 $body-path:     '/images/deco-header-bg.jpg';
@@ -18,3 +20,4 @@ $dark-green: #132A13;
 
 // dimensions
 $header-height: 50px;
+$context-menu-height: 90px;

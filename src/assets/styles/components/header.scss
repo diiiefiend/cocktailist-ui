@@ -20,7 +20,7 @@ header{
     a {
       color: $gold;
       display: block;
-      font: 18px "Baskerville Old Face", "Garamond", serif; // prob need to include Baskerville
+      font: 16px "LibreBaskerville", "Garamond", serif;
       padding: 15px 0;
       text-align: center;
       text-decoration: none;
@@ -36,47 +36,4 @@ header{
       }
     }
   }
-
-  // #user-menu{
-  //   grid-column-start: 10;
-  //   grid-column-end: span 1;
-  //   justify-self: end;
-
-  //   margin: 40px 0 -10px;
-  //   position: relative;
-  //   display: block;
-
-  //   ul{
-  //     list-style: none;
-  //     font-size: 16px;
-  //     display: none;
-  //     position: absolute;
-  //     z-index: 1;
-  //     width: 100px;
-  //     padding: 5px;
-  //     background: white;
-  //     left: -43px;
-
-  //     &:after{
-  //       content: "";
-  //       display: none;
-  //       position: absolute;
-  //       top: -10px;
-  //       left: 50px;
-  //       border-bottom: 10px solid white;
-  //       border-top: 0 solid white;
-  //       border-right: 10px solid transparent;
-  //       border-left: 10px solid transparent;
-  //     }
-
-  //     li:first-child{
-  //       font-size: 14px;
-  //       color: #aaa;
-  //     }
-  //   }
-
-  //   &:hover ul, &:hover ul:after{
-  //     display: block;
-  //   }
-  // }
 }

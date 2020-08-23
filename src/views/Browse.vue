@@ -1,5 +1,27 @@
 <template>
-  <div id="browse" class="grid">
+  <div id="browse">
+    <context-menu>
+      <div class="gap-1"></div>
+      <div class="span-2 justify-left">
+        <button>Add Cocktail</button>
+      </div>
+      <div class="span-2">
+        <select>
+          <option>All spirits</option>
+        </select>
+      </div>
+      <div class="span-2">
+        <select>
+          <option>All bars</option>
+        </select>
+      </div>
+      <div class="span-3 justify-right">
+        <input class="search" placeholder="I have something in mind" />
+      </div>
+      <div class="span-1 justify-right">
+        <button>Search</button>
+      </div>
+    </context-menu>
     <!-- <layout-container :is-left-side="true" :width="2">
       <content-box>
         <map-view :is-wide="true"></map-view>
@@ -23,17 +45,17 @@
 
 <script>
 // @ is an alias to /src
+import ContextMenu from "@/components/ContextMenu.vue";
 // import LayoutContainer from "@/components/LayoutContainer.vue";
 // import ContentBox from "@/components/ContentBox.vue";
-// import MapView from "@/components/MapView.vue";
 // import CocktailGrid from "@/components/CocktailGrid.vue";
 
 export default {
   name: "Browse",
   components: {
+    ContextMenu
     // LayoutContainer,
     // ContentBox,
-    // MapView,
     // CocktailGrid
   },
   data: function() {
