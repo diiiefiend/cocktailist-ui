@@ -51,7 +51,16 @@ const mockCocktailData = [
       "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
     bar: "wherever",
     rating: 5,
-    type: "other"
+    type: "brandy"
+  },
+  {
+    id: "7",
+    name: "Really Long Name Vodka Drink",
+    imgUrl:
+      "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
+    bar: "wherever",
+    rating: 5,
+    type: "vodka"
   }
 ];
 

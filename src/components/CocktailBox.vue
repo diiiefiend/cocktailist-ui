@@ -1,16 +1,19 @@
 <template>
   <div class="cocktail-box">
-    {{ name }}
-    {{ bar }}
-    {{ rating }}
-    {{ type }}
+    <h3>
+      <a href="#">{{ name }}</a>
+    </h3>
+    <ul class="details" :class="[type]">
+      <li>{{ bar }}</li>
+      <li>{{ rating }}</li>
+      <li class="label">{{ type }}</li>
+    </ul>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import { CocktailBoxItem } from "../models";
-// import CocktailItem from "@/components/CocktailItem.vue";
 
 @Component({
   components: {
@@ -19,6 +22,8 @@ import { CocktailBoxItem } from "../models";
 })
 export default class CocktailBox extends Vue {
   @Prop() private cocktail!: CocktailBoxItem;
+
+  // should add an onclick on the main div
 
   data() {
     return {

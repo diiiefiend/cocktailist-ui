@@ -1,3 +1,52 @@
+@import "../_variables.scss";
+
 .cocktail-box {
   grid-column-end: span 2;
+  background: $white;
+  min-height: 200px;
+
+  h3 {
+    font-size: $font-xl;
+    margin: 10px;
+    min-height: 80px;
+  }
+
+  .details {
+    background: $black;
+    color: $white;
+    font: $font-md "Montserrat", sans-serif;
+    list-style: none;
+    min-height: 80px;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+
+    &.gin {
+      background: $navy;
+    }
+
+    &.vodka {
+      background: $amethyst;
+    }
+
+    &.tequila {
+      background: $ruby;
+    }
+
+    &.whiskey {
+      background: $russet;
+    }
+
+    &.rum {
+      background: $marigold;
+    }
+
+    .label {
+      font: $font-xl "LibreBaskerville", "Garamond", serif;
+      opacity: 0.3;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
