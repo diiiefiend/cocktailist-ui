@@ -1,5 +1,5 @@
 <template>
-  <div :class="[sideClass, widthClass]">
+  <div class="grid">
     <slot></slot>
   </div>
 </template>
@@ -9,15 +9,14 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class LayoutContainer extends Vue {
-  @Prop() private isLeftSide!: boolean;
-  @Prop() private width!: number; // should be 1-3
+  // @Prop() private asideType!: number; // 0: not aside, 1: left aside, 2: right aside
 
   data() {
-    const widthClasses: string[] = ["narrow", "wide", "single-col"];
+    // const isAside = this.asideType > 0;
 
     return {
-      sideClass: this.isLeftSide ? "left" : "right",
-      widthClass: widthClasses[this.width - 1]
+      // isAside,
+      // asideClass: isAside && this.asideType > 1 ? "right" : "left"
     };
   }
 }

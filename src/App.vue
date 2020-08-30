@@ -2,9 +2,9 @@
   <div id="app">
     <Header msg="test" />
 
-    <div id="content">
+    <main id="content">
       <router-view />
-    </div>
+    </main>
 
     <Footer msg="test" />
   </div>
