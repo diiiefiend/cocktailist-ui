@@ -1,18 +1,20 @@
 @import "../_variables.scss";
 * {
-  font-size: $font-md;
+  color: $white;
+  font: $font-md "Montserrat", sans-serif;
 }
 
 .grid {
   height: $context-menu-height;
-  grid-template-rows: .33fr;  // 3 "rows" possible
+  grid-template-rows: 10% auto 30%;  // 3 "rows" possible
   grid-gap: 10px;
-
+  
   * {
+    align-self: center;
     justify-self: stretch;
   }
 
-  .gap {
+  .row-gap {
     &-1 {
       grid-column-end: span 10;
       grid-row-end: span 1;
@@ -20,6 +22,10 @@
   }
 
   .span {
+    &-4 {
+      grid-column-end: span 4;
+    }
+
     &-3 {
       grid-column-end: span 3;
     }
@@ -42,30 +48,36 @@
       justify-self: right;
     }
   }
+}
 
-  button {
-    &.primary {
-      background: $gold;
-      color: $dark-green;
-    }
+button {
+  white-space: nowrap;
 
-    &.secondary {
-      background: $emerald;
-      color: $dark-green;
-    }
+  &.primary {
+    background: $gold;
+    color: $dark-green;
   }
 
-  select, input {
-    display: block;
-    width: 100%;
-    border-bottom: 1px solid $emerald;
-    color: $white;
+  &.secondary {
+    background: $emerald;
+    color: $dark-green;
   }
+}
 
-  input#search {
-    width: 200px;
-    placeholder {
-      color: $emerald;
-    }
+select, input {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid $emerald;
+  color: $white;
+}
+
+input#search {
+  width: 200px;
+  placeholder {
+    color: $emerald;
   }
+}
+
+.emerald {
+  color: $emerald;
 }

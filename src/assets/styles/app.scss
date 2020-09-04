@@ -13,6 +13,10 @@ body {
   font: $font-baseline  "LibreBaskerville", "Garamond", serif;
 }
 
+#content {
+  min-height: calc(100vh - #{$footer-height} - #{$header-height} - 10px);
+}
+
 .grid {
   max-width: $app-width;
   margin: 0 auto;
@@ -25,6 +29,7 @@ button {
   font-family: "Montserrat", sans-serif;
   padding: 5px 15px;
   border: 0;
+  margin: 10px;
 
   &.primary {
     background: $gold;

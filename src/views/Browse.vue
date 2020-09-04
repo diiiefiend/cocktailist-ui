@@ -1,7 +1,7 @@
 <template>
   <div id="browse">
     <context-menu>
-      <div class="gap-1"></div>
+      <div class="row-gap-1"></div>
       <div class="span-2 justify-left">
         <button class="primary">Add Cocktail</button>
       </div>

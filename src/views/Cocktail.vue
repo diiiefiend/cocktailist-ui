@@ -1,42 +1,38 @@
 <template>
-  <div id="cocktail" class="grid">
-    <layout-container :is-left-side="true" :width="2">
-      <content-box title="Cocktail Name" :has-header="true">
-        <cocktail-detail :cocktail="cocktail"></cocktail-detail>
-      </content-box>
-
-      <content-box title="Rate Me" :has-header="true"></content-box>
-
-      <content-box title="Ratings" :has-header="true"></content-box>
-    </layout-container>
-
-    <layout-container :is-left-side="false" :width="1">
-      <content-box title="Bar Name" :is-narrow="true">
-        <map-view></map-view>
-      </content-box>
-      <content-box title="Similar:" :is-narrow="true">
-        <cocktail-item :cocktail="cocktail"></cocktail-item>
-      </content-box>
+  <div id="cocktail-detail">
+    <context-menu>
+      <div class="row-gap-1"></div>
+      <div class="span-3 justify-left">
+        <button class="primary">Add Review</button>
+        <button class="primary">Add to List</button>
+      </div>
+      <div class="span-4">
+        Listed in: Done and Done
+      </div>
+      <div class="span-2 justify-right emerald">
+        Last updated: 09.04.2020
+      </div>
+      <div class="span-1 justify-right">
+        <button class="secondary">Edit Entry</button>
+      </div>
+    </context-menu>
+    <layout-container>
+      Hi
     </layout-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import LayoutContainer from "@/components/LayoutContainer.vue";
-// import ContentBox from "@/components/ContentBox.vue";
-// import MapView from "@/components/MapView.vue";
-// import CocktailItem from "@/components/CocktailItem.vue";
-// import CocktailDetail from "@/components/CocktailDetail.vue";
+import { mockCocktailData } from "../mocks.js";
+import ContextMenu from "@/components/ContextMenu.vue";
+import LayoutContainer from "@/components/LayoutContainer.vue";
 
 export default {
-  name: "Browse",
+  name: "Cocktail",
   components: {
-    // LayoutContainer,
-    // ContentBox,
-    // MapView,
-    // CocktailItem,
-    // CocktailDetail
+    ContextMenu,
+    LayoutContainer
   },
   data: function() {
     return {

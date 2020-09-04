@@ -1,13 +1,15 @@
 <template>
   <div class="cocktail-box">
-    <h3>
-      <a href="#">{{ name }}</a>
-    </h3>
-    <ul class="details" :class="[type]">
-      <li>{{ bar }}</li>
-      <li>{{ rating }}</li>
-      <li class="label">{{ type }}</li>
-    </ul>
+    <router-link to="/cocktail">
+      <h3>
+        {{ name }}
+      </h3>
+      <ul class="details" :class="[type]">
+        <li>{{ bar }}</li>
+        <li>{{ rating }}</li>
+        <li class="label">{{ type }}</li>
+      </ul>
+    </router-link>
   </div>
 </template>
 
