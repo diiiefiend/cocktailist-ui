@@ -1,26 +1,25 @@
 <template>
-  <div id="footer">
-    <div class="grid">
-      <p class="credits">
-        Made by
-        <a href="http://github.com/diiiefiend" target="_blank">Ariel Hou</a
-        >.<br />
-        <span class="subtext"
-          >Drink images:
-          <a href="http://yelp.com" target="_blank">Yelp</a>/myself, vector:
-          <a href="https://thenounproject.com/" target="_blank"
-            >The Noun Project</a
-          >, drink info: respective establishments, CSS loader:
-          <a href="http://projects.lukehaas.me/css-loaders/" target="_blank"
-            >Luke Hass</a
-          >.</span
-        >
-      </p>
-      <div class="quicklinks">
-        <a href="javascript:void(0);" class="toplink scrollToTop">top</a>
-      </div>
+  <footer class="grid">
+    <ul class="credits">
+      <li>
+        <a href="http://github.com/diiiefiend/cocktailist-ui" target="_blank">
+          repo
+        </a>
+      </li>
+      <li>
+        <a href="http://projects.lukehaas.me/css-loaders" target="_blank">
+          loader
+        </a>
+        |
+        <a href="https://thenounproject.com/" target="_blank">
+          vector
+        </a>
+      </li>
+    </ul>
+    <div class="quicklinks">
+      <a href="javascript:void(0);" class="toplink scrollToTop">back to top?</a>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script lang="ts">
@@ -28,7 +27,7 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class Footer extends Vue {
-  @Prop() private msg!: string;
+  // @Prop() private msg!: string;
 }
 </script>
 

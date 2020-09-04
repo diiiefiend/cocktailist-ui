@@ -37,8 +37,13 @@ button {
   }
 }
 
+// overrides
 input, select {
   background: transparent;
   border: 0;
   font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
