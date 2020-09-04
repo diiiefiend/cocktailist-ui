@@ -12,7 +12,6 @@
   }
 
   .details {
-    background: $black;
     color: $white;
     font: $font-md "Montserrat", sans-serif;
     list-style: none;
@@ -20,26 +19,6 @@
     padding: 10px;
     position: relative;
     margin: 0;
-
-    &.gin {
-      background: $navy;
-    }
-
-    &.vodka {
-      background: $amethyst;
-    }
-
-    &.tequila {
-      background: $ruby;
-    }
-
-    &.whiskey {
-      background: $russet;
-    }
-
-    &.rum {
-      background: $marigold;
-    }
 
     .label {
       font: $font-xl "LibreBaskerville", "Garamond", serif;

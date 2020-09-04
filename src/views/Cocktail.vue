@@ -17,33 +17,43 @@
       </div>
     </context-menu>
     <layout-container>
-      Hi
+      <content-box width="6">
+        <h1 class="coloredByType" :class="cocktail.type">
+          {{ cocktail.name }}
+          <span class="type">({{ cocktail.type }})</span>
+        </h1>
+        <h2>from {{ cocktail.bar }}</h2>
+        <h2>Ingredients:</h2>
+        <ul>
+          <li
+            v-for="ingredient in cocktail.ingredients.split(',')"
+            :key="ingredient"
+          >
+            {{ ingredient }}
+          </li>
+        </ul>
+      </content-box>
     </layout-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import { mockCocktailData } from "../mocks.js";
+import { mockCocktailDetailData } from "../mocks.js";
 import ContextMenu from "@/components/ContextMenu.vue";
 import LayoutContainer from "@/components/LayoutContainer.vue";
+import ContentBox from "@/components/ContentBox.vue";
 
 export default {
   name: "Cocktail",
   components: {
     ContextMenu,
-    LayoutContainer
+    LayoutContainer,
+    ContentBox
   },
   data: function() {
     return {
-      cocktail: {
-        id: "1",
-        img:
-          "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
-        bar: "wherever",
-        liquor: "whiskey",
-        rating: 1.5
-      }
+      cocktail: mockCocktailDetailData
     };
   }
 };

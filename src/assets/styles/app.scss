@@ -25,6 +25,30 @@ body {
   grid-template-columns: repeat(10, 1fr);
 }
 
+.coloredByType {
+  background: $black;
+
+  &.gin {
+    background: $navy;
+  }
+  
+  &.vodka {
+    background: $amethyst;
+  }
+  
+  &.tequila {
+    background: $ruby;
+  }
+  
+  &.whiskey {
+    background: $russet;
+  }
+  
+  &.rum {
+    background: $marigold;
+  }
+}
+
 button {
   font-family: "Montserrat", sans-serif;
   padding: 5px 15px;

@@ -4,7 +4,7 @@
       <h3>
         {{ name }}
       </h3>
-      <ul class="details" :class="[type]">
+      <ul class="details coloredByType" :class="[type]">
         <li>{{ bar }}</li>
         <li>{{ rating }}</li>
         <li class="label">{{ type }}</li>

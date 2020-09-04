@@ -1,6 +1,5 @@
 <template>
-  <div class="box" :class="{ small: isNarrow }">
-    <h1 v-if="title" :class="{ header: hasHeader }">{{ title }}</h1>
+  <div class="box" :style="widthStyle">
     <slot></slot>
   </div>
 </template>
@@ -10,9 +9,13 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class ContentBox extends Vue {
-  @Prop() private title?: string;
-  @Prop() private isNarrow!: boolean;
-  @Prop() private hasHeader?: boolean;
+  @Prop() private width?: number;
+
+  data() {
+    return {
+      widthStyle: `grid-column-end: span ${this.width || 1};`
+    };
+  }
 }
 </script>
 

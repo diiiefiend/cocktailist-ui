@@ -1,0 +1,27 @@
+@import "../_variables.scss";
+
+.box{
+  background: $white;
+  padding: 20px;
+}
+
+h1 {
+  color: $white;
+  font-size: $font-xxl;
+  font-weight: normal;
+  margin: -20px -20px 0 -20px;
+  padding: 20px;
+
+  .type {
+    opacity: 0.5;
+  }
+}
+
+h2 {
+  font-size: $font-xl;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}

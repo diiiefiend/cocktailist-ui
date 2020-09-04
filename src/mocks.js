@@ -1,10 +1,10 @@
 const mockCocktailData = [
   {
     id: "1",
-    name: "Gin Drink",
+    name: "The Last Word",
     imgUrl:
       "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
-    bar: "wherever",
+    bar: "The Nomad Bar",
     rating: 1.5,
     type: "gin"
   },
@@ -64,4 +64,9 @@ const mockCocktailData = [
   }
 ];
 
-export { mockCocktailData };
+const mockCocktailDetailData = {
+  ...mockCocktailData[0],
+  ingredients: "green chartreuse, gin, maraschino liqueur, lime juice"
+};
+
+export { mockCocktailData, mockCocktailDetailData };
