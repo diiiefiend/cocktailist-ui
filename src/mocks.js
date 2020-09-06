@@ -2,8 +2,7 @@ const mockCocktailData = [
   {
     id: "1",
     name: "The Last Word",
-    imgUrl:
-      "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
+    imgUrl: "/images/test-drinks/fairlady.jpg",
     bar: "The Nomad Bar",
     rating: 1.5,
     type: "gin"

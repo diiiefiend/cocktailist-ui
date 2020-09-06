@@ -2,14 +2,32 @@
 
 .box{
   background: $white;
+  line-height: 2em;
   padding: 20px;
+}
+
+.cocktailImage {
+  float: right;
+
+  background: no-repeat bottom center/100% url($napkin-path);
+  padding: 0 30px 30px;
+  min-height: 240px;
+  min-width: 200px;
+  
+  img {
+    display: block;
+    margin: 0 auto;
+
+    max-height: 300px;
+    max-width: 275px;
+  }
 }
 
 h1 {
   color: $white;
   font-size: $font-xxl;
   font-weight: normal;
-  margin: -20px -20px 0 -20px;
+  margin: -20px -20px 20px -20px;
   padding: 20px;
 
   .type {
@@ -24,4 +42,11 @@ h2 {
 
 ul {
   list-style: none;
+
+  &.ingredients {
+    li {
+      font-size: $font-md;
+      text-transform: capitalize;
+    }
+  }
 }

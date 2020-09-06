@@ -22,9 +22,12 @@
           {{ cocktail.name }}
           <span class="type">({{ cocktail.type }})</span>
         </h1>
+        <div class="cocktailImage">
+          <img :src="cocktail.imgUrl" :alt="cocktail.name + ' image'" />
+        </div>
         <h2>from {{ cocktail.bar }}</h2>
         <h2>Ingredients:</h2>
-        <ul>
+        <ul class="ingredients">
           <li
             v-for="ingredient in cocktail.ingredients.split(',')"
             :key="ingredient"
