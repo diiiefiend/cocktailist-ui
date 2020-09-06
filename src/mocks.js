@@ -68,4 +68,29 @@ const mockCocktailDetailData = {
   ingredients: "green chartreuse, gin, maraschino liqueur, lime juice"
 };
 
-export { mockCocktailData, mockCocktailDetailData };
+const mockReviewData = [
+  {
+    id: 123,
+    cocktailId: 1,
+    userId: 2,
+    reviewer: "Ariel",
+    rating: 4.5,
+    spiritedRating: 4,
+    innovationRating: 5,
+    comment:
+      "Oh my, what a drink. I'm going to type a lot of gibberish right now blah blah blah. Man I wish I was using my mechanical keyboard to type all this right now; it's a lot more fun."
+  },
+  {
+    id: 456,
+    cocktailId: 1,
+    userId: 3,
+    reviewer: "Frank",
+    rating: 6,
+    spiritedRating: 6,
+    innovationRating: 7,
+    comment:
+      "I am such a lightweight now. Normally I can drink 5 or 6 of these drinks but nowadays even one makes me feel tipsy. Pretty sad."
+  }
+];
+
+export { mockCocktailData, mockCocktailDetailData, mockReviewData };

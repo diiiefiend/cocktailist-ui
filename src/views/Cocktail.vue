@@ -36,13 +36,27 @@
           </li>
         </ul>
       </content-box>
+      <content-box width="6">
+        <h1 class="reviews">
+          Guests say...
+        </h1>
+        <ul class="reviews">
+          <li v-for="review in reviews" :key="review.id">
+            {{ review.rating }}<br />
+            Spirited: {{ review.spiritedRating }}; Innovative:
+            {{ review.innovationRating }}.<br />
+            <p>{{ review.comment }}</p>
+            <div class="reviewer">{{ review.reviewer }}</div>
+          </li>
+        </ul>
+      </content-box>
     </layout-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import { mockCocktailDetailData } from "../mocks.js";
+import { mockCocktailDetailData, mockReviewData } from "../mocks.js";
 import ContextMenu from "@/components/ContextMenu.vue";
 import LayoutContainer from "@/components/LayoutContainer.vue";
 import ContentBox from "@/components/ContentBox.vue";
@@ -56,7 +70,8 @@ export default {
   },
   data: function() {
     return {
-      cocktail: mockCocktailDetailData
+      cocktail: mockCocktailDetailData,
+      reviews: mockReviewData
     };
   }
 };
