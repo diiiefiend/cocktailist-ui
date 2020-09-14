@@ -5,7 +5,7 @@
     @mouseleave="hovered = false"
   >
     <router-link to="/cocktail">
-      <h3 :class="{ hovered: hovered }">
+      <h3 :class="{ hovered }">
         {{ name }}
       </h3>
       <ul
