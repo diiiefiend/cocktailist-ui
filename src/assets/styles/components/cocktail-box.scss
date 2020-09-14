@@ -6,9 +6,15 @@
   min-height: 200px;
 
   h3 {
+    color: $black;
     font-size: $font-xl;
     margin: 10px;
     min-height: 80px;
+    transition: $transition-fast;
+
+    &.hovered {
+      color: $lighter-black;
+    }
   }
 
   .details {

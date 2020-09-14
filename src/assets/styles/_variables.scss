@@ -16,14 +16,23 @@ $napkin-path:   '/images/imgborderbg-black.png';
 $white: #fff;
 $dark-gray: #1B1B1A; // background color
 $gold: #D8C263;
+$light-gold: lighten($gold, 10%);
 $emerald: #154C38;
+$light-emerald: lighten($emerald, 10%);
 $dark-green: #132A13; // context menu color
 $ruby: #53000c;       // tequila
+$light-ruby: lighten($ruby, 10%);
 $navy: #03242f;       // gin
+$light-navy: lighten($navy, 10%);
 $amethyst: #330928;   // vodka
+$light-amethyst: lighten($amethyst, 10%);
 $russet: #6f3d08;     // whiskey
+$light-russet: lighten($russet, 10%);
 $marigold: #a79112;   // (rum)
-$black: #000;         // other
+$light-marigold: lighten($marigold, 10%);
+$black: #111;         // other
+$light-black: lighten($black, 10%);
+$lighter-black: lighten($black, 25%);
 
 // dimensions
 $app-width: 1000px;
@@ -38,3 +47,6 @@ $font-xl: 20px;
 $font-lg: 16px;
 $font-md: 14px;
 $font-baseline: 12px;
+
+// transitions
+$transition-fast: all 0.2s;

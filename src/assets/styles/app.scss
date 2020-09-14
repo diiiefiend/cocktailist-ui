@@ -1,6 +1,7 @@
 @import "_variables.scss";
 
 body {
+  color: $black;
   margin: 0;
   padding: 0;
   background: $dark-gray url($body-path) repeat-x;
@@ -27,25 +28,50 @@ body {
 
 .coloredByType {
   background: $black;
+  transition: $transition-fast;
 
+  &.hovered {
+    background: $light-black;
+  }
+  
   &.gin {
     background: $navy;
+
+    &.hovered {
+      background: $light-navy;
+    }
   }
   
   &.vodka {
     background: $amethyst;
+
+    &.hovered {
+      background: $light-amethyst;
+    }
   }
   
   &.tequila {
     background: $ruby;
+
+    &.hovered {
+      background: $light-ruby;
+    }
   }
   
   &.whiskey {
     background: $russet;
+
+    &.hovered {
+      background: $light-russet;
+    }
   }
   
   &.rum {
     background: $marigold;
+
+    &.hovered {
+      background: $light-marigold;
+    }
   }
 }
 
@@ -54,15 +80,24 @@ button {
   padding: 5px 15px;
   border: 0;
   margin: 10px;
+  transition: $transition-fast;
 
   &.primary {
     background: $gold;
     color: $dark-green;
+    
+    &:hover {
+      background: $light-gold;
+    }
   }
 
   &.secondary {
     background: $emerald;
     color: $dark-green;
+    
+    &:hover {
+      background: $light-emerald;
+    }
   }
 }
 

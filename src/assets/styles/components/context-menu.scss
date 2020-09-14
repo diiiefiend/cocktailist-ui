@@ -52,16 +52,6 @@
 
 button {
   white-space: nowrap;
-
-  &.primary {
-    background: $gold;
-    color: $dark-green;
-  }
-
-  &.secondary {
-    background: $emerald;
-    color: $dark-green;
-  }
 }
 
 select, input {
