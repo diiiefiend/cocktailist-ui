@@ -1,10 +1,17 @@
 <template>
-  <div class="cocktail-box">
+  <div
+    class="cocktail-box"
+    @mouseover="hovered = true"
+    @mouseleave="hovered = false"
+  >
     <router-link to="/cocktail">
-      <h3>
+      <h3 :class="{ hovered }">
         {{ name }}
       </h3>
-      <ul class="details coloredByType" :class="[type]">
+      <ul
+        class="details coloredByType"
+        :class="[hovered ? `hovered ${type}` : type]"
+      >
         <li>{{ bar }}</li>
         <li>{{ rating }}</li>
         <li class="label">{{ type }}</li>
@@ -32,7 +39,8 @@ export default class CocktailBox extends Vue {
       name: this.cocktail.name,
       bar: this.cocktail.bar,
       rating: this.cocktail.rating,
-      type: this.cocktail.type
+      type: this.cocktail.type,
+      hovered: false
     };
   }
 }

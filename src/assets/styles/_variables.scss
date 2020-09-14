@@ -13,17 +13,27 @@ $rating-path:   '/images/rating-empty.png';
 $napkin-path:   '/images/imgborderbg-black.png';
 
 // colors
+$light-percent: 10%;
 $white: #fff;
 $dark-gray: #1B1B1A; // background color
 $gold: #D8C263;
+$light-gold: lighten($gold, $light-percent);
 $emerald: #154C38;
+$light-emerald: lighten($emerald, $light-percent);
 $dark-green: #132A13; // context menu color
 $ruby: #53000c;       // tequila
+$light-ruby: lighten($ruby, $light-percent);
 $navy: #03242f;       // gin
+$light-navy: lighten($navy, $light-percent);
 $amethyst: #330928;   // vodka
+$light-amethyst: lighten($amethyst, $light-percent);
 $russet: #6f3d08;     // whiskey
+$light-russet: lighten($russet, $light-percent);
 $marigold: #a79112;   // (rum)
-$black: #000;         // other
+$light-marigold: lighten($marigold, $light-percent);
+$black: #111;         // other
+$light-black: lighten($black, $light-percent);
+$lighter-black: lighten($black, 25%);
 
 // dimensions
 $app-width: 1000px;
@@ -38,3 +48,6 @@ $font-xl: 20px;
 $font-lg: 16px;
 $font-md: 14px;
 $font-baseline: 12px;
+
+// transitions
+$transition-fast: all 0.2s

@@ -1,7 +1,14 @@
 <template>
   <header class="grid">
     <div id="logo">
-      <a href="/"><img src="/images/deco-logo.png" alt="cocktailist"/></a>
+      <a href="/" @mouseover="hovered = true" @mouseleave="hovered = false">
+        <img
+          alt="cocktailist"
+          :src="[
+            hovered ? '/images/deco-logo-hover.png' : '/images/deco-logo.png'
+          ]"
+        />
+      </a>
     </div>
     <nav>
       <li><router-link to="/" class="active">Cocktails</router-link></li>
@@ -14,11 +21,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Header extends Vue {
   // @Prop() private msg!: string;
+  data() {
+    return {
+      hovered: false
+    };
+  }
 }
 </script>
 
