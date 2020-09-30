@@ -39,6 +39,13 @@ ul {
     li {
       margin: 0 30px;
 
+      .rating {
+        &.number {
+          font-size: $font-xxl;
+          font-style: italic;
+        }
+      }
+
       .reviewer {
         display: block;
         font-size: $font-lg;

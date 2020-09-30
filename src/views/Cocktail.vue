@@ -36,15 +36,22 @@
           </li>
         </ul>
       </content-box>
+      <content-box width="3">
+        testing
+      </content-box>
       <content-box width="6">
         <h1 class="reviews">
           Guests say...
         </h1>
         <ul class="reviews">
           <li v-for="review in reviews" :key="review.id">
-            {{ review.rating }}<br />
-            Spirited: {{ review.spiritedRating }}; Innovative:
-            {{ review.innovationRating }}.<br />
+            <!-- {{ review.rating }}<br /> -->
+            <img src="/images/rating-empty.png" alt="rating" /><br />
+            Spirited:
+            <span class="rating number">{{ review.spiritedRating }}</span>
+            ; Innovative:
+            <span class="rating number">{{ review.innovationRating }}</span>
+            <br />
             <p>{{ review.comment }}</p>
             <div class="reviewer">{{ review.reviewer }}</div>
           </li>
