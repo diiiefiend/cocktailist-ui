@@ -101,6 +101,13 @@ button {
   }
 }
 
+.ratings-box { // will prob become it's own component soon
+  width: 200px;
+  height: 200px;
+  background: #eee;
+  margin: 10px auto;
+}
+
 // overrides
 input, select {
   background: transparent;
@@ -109,5 +116,10 @@ input, select {
 }
 
 a {
+  color: $emerald;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

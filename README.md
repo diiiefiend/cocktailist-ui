@@ -1,7 +1,7 @@
 # cocktailist UI
 Ariel Hou, Apr 2020 - ongoing
 
-#Live Site
+# Live Site
 [http://cocktailist.club][link]
 
 [link]: http://cocktailist.club

@@ -68,6 +68,12 @@ const mockCocktailDetailData = {
   ingredients: "green chartreuse, gin, maraschino liqueur, lime juice"
 };
 
+const mockBarData = {
+  id: "1",
+  name: "The Nomad Bar",
+  address: "123 Alphabet St, New York, NY 10016"
+};
+
 const mockReviewData = [
   {
     id: 123,
@@ -93,4 +99,9 @@ const mockReviewData = [
   }
 ];
 
-export { mockCocktailData, mockCocktailDetailData, mockReviewData };
+export {
+  mockCocktailData,
+  mockCocktailDetailData,
+  mockReviewData,
+  mockBarData
+};

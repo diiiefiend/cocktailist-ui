@@ -57,10 +57,17 @@
       <grid-box width="4" startCol="7" :applyBoxStyle="false">
         <layout-container>
           <grid-box width="10" startCol="1">
-            Bar
+            <h2>{{ bar.name }}</h2>
+            {{ bar.address }}
+            <div class="teaser-link"><a href="#!">View all drinks</a></div>
           </grid-box>
           <grid-box width="10" startCol="1">
-            Stats
+            <h2>Ratings</h2>
+            <img src="/images/rating-empty.png" alt="rating" /><br />
+            <div class="ratings-box"></div>
+            <div class="teaser-link">
+              <a href="#!">View stats for {{ cocktail.type }} drinks</a>
+            </div>
           </grid-box>
         </layout-container>
       </grid-box>
@@ -70,7 +77,11 @@
 
 <script>
 // @ is an alias to /src
-import { mockCocktailDetailData, mockReviewData } from "../mocks.js";
+import {
+  mockCocktailDetailData,
+  mockReviewData,
+  mockBarData
+} from "../mocks.js";
 import ContextMenu from "@/components/ContextMenu.vue";
 import LayoutContainer from "@/components/LayoutContainer.vue";
 import GridBox from "@/components/GridBox.vue";
@@ -84,6 +95,7 @@ export default {
   },
   data: function() {
     return {
+      bar: mockBarData,
       cocktail: mockCocktailDetailData,
       reviews: mockReviewData
     };
