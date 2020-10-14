@@ -39,7 +39,7 @@ import { mockCocktailData } from "../mocks.js";
 import ContextMenu from "@/components/ContextMenu.vue";
 import LayoutContainer from "@/components/LayoutContainer.vue";
 import CocktailBox from "@/components/CocktailBox.vue";
-// import ContentBox from "@/components/ContentBox.vue";
+// import GridBox from "@/components/GridBox.vue";
 
 export default {
   name: "Browse",
@@ -47,7 +47,7 @@ export default {
     ContextMenu,
     LayoutContainer,
     CocktailBox
-    // ContentBox,
+    // GridBox,
   },
   data: function() {
     return {

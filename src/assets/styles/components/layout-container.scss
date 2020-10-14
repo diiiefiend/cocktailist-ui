@@ -1,14 +1,10 @@
 .grid {
-  padding: 25px 0;
+  align-items: start;
+  grid-auto-flow: column dense;
   grid-gap: 25px;
+  padding: 25px 0;
 }
 
-aside {
-  &.left {
-
-  }
-
-  &.right {
-
-  }
+.grid .grid {
+  padding: 0;
 }

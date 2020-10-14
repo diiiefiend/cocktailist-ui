@@ -17,7 +17,7 @@
       </div>
     </context-menu>
     <layout-container>
-      <content-box width="6">
+      <grid-box width="6" startCol="1">
         <h1 class="coloredByType" :class="cocktail.type">
           {{ cocktail.name }}
           <span class="type">({{ cocktail.type }})</span>
@@ -35,11 +35,8 @@
             {{ ingredient }}
           </li>
         </ul>
-      </content-box>
-      <content-box width="3">
-        testing
-      </content-box>
-      <content-box width="6">
+      </grid-box>
+      <grid-box width="6" startCol="1">
         <h1 class="reviews">
           Guests say...
         </h1>
@@ -56,7 +53,17 @@
             <div class="reviewer">{{ review.reviewer }}</div>
           </li>
         </ul>
-      </content-box>
+      </grid-box>
+      <grid-box width="4" startCol="7" :applyBoxStyle="false">
+        <layout-container>
+          <grid-box width="10" startCol="1">
+            Bar
+          </grid-box>
+          <grid-box width="10" startCol="1">
+            Stats
+          </grid-box>
+        </layout-container>
+      </grid-box>
     </layout-container>
   </div>
 </template>
@@ -66,14 +73,14 @@
 import { mockCocktailDetailData, mockReviewData } from "../mocks.js";
 import ContextMenu from "@/components/ContextMenu.vue";
 import LayoutContainer from "@/components/LayoutContainer.vue";
-import ContentBox from "@/components/ContentBox.vue";
+import GridBox from "@/components/GridBox.vue";
 
 export default {
   name: "Cocktail",
   components: {
     ContextMenu,
     LayoutContainer,
-    ContentBox
+    GridBox
   },
   data: function() {
     return {
