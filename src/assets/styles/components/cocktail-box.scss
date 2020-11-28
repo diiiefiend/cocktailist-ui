@@ -5,6 +5,10 @@
   background: $white;
   min-height: 200px;
 
+  a:hover {
+    text-decoration: none;
+  }
+
   h3 {
     color: $black;
     font-size: $font-xl;

@@ -15,7 +15,7 @@
       <li><router-link to="/">Activity</router-link></li>
       <li><router-link to="/">Lists</router-link></li>
       <li><router-link to="/">Data</router-link></li>
-      <li><router-link to="/">Login</router-link></li>
+      <li><router-link to="/login">Login</router-link></li>
     </nav>
   </header>
 </template>

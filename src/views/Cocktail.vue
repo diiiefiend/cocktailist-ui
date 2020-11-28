@@ -4,7 +4,7 @@
       <div class="row-gap-1"></div>
       <div class="span-3 justify-left">
         <button class="primary">Add Review</button>
-        <button class="primary">Add to List</button>
+        <button class="primary">Modify Lists</button>
       </div>
       <div class="span-4">
         Listed in: Done and Done
@@ -17,54 +17,62 @@
       </div>
     </context-menu>
     <layout-container>
-      <grid-box width="6" startCol="1">
-        <h1 class="coloredByType" :class="cocktail.type">
-          {{ cocktail.name }}
-          <span class="type">({{ cocktail.type }})</span>
-        </h1>
-        <div class="cocktailImage">
-          <img :src="cocktail.imgUrl" :alt="cocktail.name + ' image'" />
-        </div>
-        <h2>from {{ cocktail.bar }}</h2>
-        <h2>Ingredients:</h2>
-        <ul class="ingredients">
-          <li
-            v-for="ingredient in cocktail.ingredients.split(',')"
-            :key="ingredient"
-          >
-            {{ ingredient }}
-          </li>
-        </ul>
+      <!-- main content -->
+      <grid-box width="6" startCol="1" :applyBoxStyle="false">
+        <!-- grids in grids so the left and right content areas can flow independently--at least until there's native masonry -->
+        <layout-container>
+          <grid-box width="10">
+            <h1 class="coloredByType" :class="cocktail.type">
+              {{ cocktail.name }}
+              <span class="type">({{ cocktail.type }})</span>
+            </h1>
+            <div class="cocktailImage">
+              <img :src="cocktail.imgUrl" :alt="cocktail.name + ' image'" />
+            </div>
+            <h2>from {{ cocktail.bar }}</h2>
+            <h2>Ingredients:</h2>
+            <ul class="ingredients">
+              <li
+                v-for="ingredient in cocktail.ingredients.split(',')"
+                :key="ingredient"
+              >
+                {{ ingredient }}
+              </li>
+            </ul>
+          </grid-box>
+          <grid-box width="10">
+            <h1 class="reviews">
+              Guests say...
+            </h1>
+            <ul class="reviews">
+              <li v-for="review in reviews" :key="review.id">
+                <!-- {{ review.rating }}<br /> -->
+                <img src="/images/rating-empty.png" alt="rating" /><br />
+                Spirited:
+                <span class="rating number">{{ review.spiritedRating }}</span>
+                ; Innovative:
+                <span class="rating number">{{ review.innovationRating }}</span>
+                <br />
+                <p>{{ review.comment }}</p>
+                <div class="reviewer">{{ review.reviewer }}</div>
+              </li>
+            </ul>
+          </grid-box>
+        </layout-container>
       </grid-box>
-      <grid-box width="6" startCol="1">
-        <h1 class="reviews">
-          Guests say...
-        </h1>
-        <ul class="reviews">
-          <li v-for="review in reviews" :key="review.id">
-            <!-- {{ review.rating }}<br /> -->
-            <img src="/images/rating-empty.png" alt="rating" /><br />
-            Spirited:
-            <span class="rating number">{{ review.spiritedRating }}</span>
-            ; Innovative:
-            <span class="rating number">{{ review.innovationRating }}</span>
-            <br />
-            <p>{{ review.comment }}</p>
-            <div class="reviewer">{{ review.reviewer }}</div>
-          </li>
-        </ul>
-      </grid-box>
+      <!-- sidebar -->
       <grid-box width="4" startCol="7" :applyBoxStyle="false">
         <layout-container>
-          <grid-box width="10" startCol="1">
+          <grid-box width="10">
             <h2>{{ bar.name }}</h2>
             {{ bar.address }}
+            <div class="placeholder-box"></div>
             <div class="teaser-link"><a href="#!">View all drinks</a></div>
           </grid-box>
-          <grid-box width="10" startCol="1">
+          <grid-box width="10">
             <h2>Ratings</h2>
             <img src="/images/rating-empty.png" alt="rating" /><br />
-            <div class="ratings-box"></div>
+            <div class="placeholder-box"></div>
             <div class="teaser-link">
               <a href="#!">View stats for {{ cocktail.type }} drinks</a>
             </div>
