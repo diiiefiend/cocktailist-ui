@@ -82,3 +82,14 @@ ul {
     }
   }
 }
+
+// sidebar stuff
+.drink-rating {
+  font-size: $font-sm;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}

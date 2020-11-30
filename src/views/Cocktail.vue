@@ -64,18 +64,21 @@
       <grid-box width="4" startCol="7" :applyBoxStyle="false">
         <layout-container>
           <grid-box width="10">
-            <h2>{{ bar.name }}</h2>
-            {{ bar.address }}
-            <div class="placeholder-box"></div>
-            <div class="teaser-link"><a href="#!">View all drinks</a></div>
-          </grid-box>
-          <grid-box width="10">
-            <h2>Ratings</h2>
-            <img src="/images/rating-empty.png" alt="rating" /><br />
+            <h2>Stats</h2>
+            <div class="drink-rating">
+              <img src="/images/rating-empty.png" alt="rating" /><br />
+              (based on 2 reviews)
+            </div>
             <div class="placeholder-box"></div>
             <div class="teaser-link">
               <a href="#!">View stats for {{ cocktail.type }} drinks</a>
             </div>
+          </grid-box>
+          <grid-box width="10">
+            <h2>{{ bar.name }}</h2>
+            {{ bar.address }}
+            <div class="placeholder-box"></div>
+            <div class="teaser-link"><a href="#!">View all drinks</a></div>
           </grid-box>
         </layout-container>
       </grid-box>
