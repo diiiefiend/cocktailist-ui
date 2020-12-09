@@ -2,12 +2,7 @@
   <header class="grid">
     <div id="logo">
       <a href="/" @mouseover="hovered = true" @mouseleave="hovered = false">
-        <img
-          alt="cocktailist"
-          :src="[
-            hovered ? '/images/deco-logo-hover.png' : '/images/deco-logo.png'
-          ]"
-        />
+        <img alt="cocktailist" :src="[hovered ? imgHover : imgStandard]" />
       </a>
     </div>
     <nav>
@@ -25,7 +20,9 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Header extends Vue {
-  // @Prop() private msg!: string;
+  imgStandard = "/images/deco-logo.png";
+  imgHover = "/images/deco-logo-hover.png";
+
   data() {
     return {
       hovered: false

@@ -9,7 +9,7 @@
         {{ name }}
       </h3>
       <ul
-        class="details coloredByType"
+        class="details colored-by-type"
         :class="[hovered ? `hovered ${type}` : type]"
       >
         <li>{{ bar }}</li>

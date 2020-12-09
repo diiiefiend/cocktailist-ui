@@ -4,7 +4,7 @@ const mockCocktailData = [
     name: "The Last Word",
     imgUrl: "/images/test-drinks/fairlady.jpg",
     bar: "The Nomad Bar",
-    rating: 1.5,
+    rating: 4,
     type: "gin"
   },
   {
@@ -65,7 +65,8 @@ const mockCocktailData = [
 
 const mockCocktailDetailData = {
   ...mockCocktailData[0],
-  ingredients: "green chartreuse, gin, maraschino liqueur, lime juice"
+  ingredients: "green chartreuse, gin, maraschino liqueur, lime juice",
+  totalRatings: 2
 };
 
 const mockBarData = {
@@ -80,6 +81,7 @@ const mockReviewData = [
     cocktailId: 1,
     userId: 2,
     reviewer: "Ariel",
+    timestamp: "timestamp",
     rating: 4.5,
     spiritedRating: 4,
     innovationRating: 5,
@@ -91,7 +93,8 @@ const mockReviewData = [
     cocktailId: 1,
     userId: 3,
     reviewer: "Frank",
-    rating: 6,
+    timestamp: "timestamp",
+    rating: 3,
     spiritedRating: 6,
     innovationRating: 7,
     comment:

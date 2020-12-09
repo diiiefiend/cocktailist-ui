@@ -6,3 +6,18 @@ export interface CocktailBoxItem {
   rating: number;
   type: string;
 }
+
+export interface CocktailDetailItem extends CocktailBoxItem {
+  ingredients: string;
+  totalRatings: number;
+}
+
+export interface ReviewItem {
+  id: number;
+  rating: number;
+  spiritedRating: number;
+  innovationRating: number;
+  comment: string;
+  reviewer: string;
+  timestamp: string;
+}

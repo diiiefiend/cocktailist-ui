@@ -1,0 +1,50 @@
+@import "../_variables.scss";
+
+ul {
+  padding: 0;
+
+  li {
+    margin: 0 30px;
+
+    .rating {
+      &.number {
+        font-size: $font-xxl;
+        font-style: italic;
+      }
+    }
+
+    .reviewer {
+      display: block;
+      font-size: $font-lg;
+      text-align: right;
+    }
+
+    &::before, &::after {
+      display: block;
+      font-size: 64px;          // special case
+      margin: 0 -30px;
+      opacity: 0.2;
+    }
+
+    &::before {
+      content: '\201C';
+      margin-top: 40px;
+      margin-bottom: -45px;
+    }
+
+    &::after {
+      content: '\201D';
+      text-align: right;
+
+      height: 50px;
+      background: no-repeat bottom center url($flourish-path);
+    }
+
+    &:last-child {
+      &::after {
+        background: none;
+        height: auto;
+      }
+    }
+  }
+}

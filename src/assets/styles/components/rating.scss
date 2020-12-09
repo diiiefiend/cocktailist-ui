@@ -5,7 +5,7 @@
   display: inline-block;
   height: 20px;
   min-width: 86px;
-  margin: 5px 0 0 10px;
+  margin: 5px 0 0;
   overflow: hidden;
   position: relative;
   
@@ -18,5 +18,14 @@
     overflow: hidden; 
     display: inline-block;
     // width will be computed inline
+  }
+}
+
+.centered {
+  font-size: $font-sm;
+  text-align: center;
+
+  p {
+    margin: 0;
   }
 }

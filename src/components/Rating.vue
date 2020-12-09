@@ -1,10 +1,13 @@
 <template>
-  <div class="rating">
-    <img :src="img" v-for="val in fullValue" :key="val" alt="*" />
+  <div :class="{ centered: showTotal }">
+    <div class="rating">
+      <img :src="img" v-for="val in fullValue" :key="val" alt="*" />
 
-    <span class="partial" :style="{ width: partialValueWidth + 'px' }">
-      <img :src="img" alt="*" />
-    </span>
+      <span class="partial" :style="{ width: partialValueWidth + 'px' }">
+        <img :src="img" alt="*" />
+      </span>
+    </div>
+    <p v-if="showTotal">(based on {{ totalRatings }} reviews)</p>
   </div>
 </template>
 
@@ -14,9 +17,10 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 @Component
 export default class Rating extends Vue {
   @Prop() private ratingValue!: number;
+  @Prop({ default: false }) private showTotal!: boolean;
+  @Prop({ default: 0 }) private totalRatings!: number;
 
-  img =
-    "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/rating-full.png";
+  img = "/images/rating-full.png";
 
   fullValue = Math.floor(this.ratingValue);
   partialValueWidth = Math.floor(18 * (this.ratingValue % 1));

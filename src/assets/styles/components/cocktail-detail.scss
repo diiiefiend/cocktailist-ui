@@ -1,0 +1,41 @@
+@import "../_variables.scss";
+
+.cocktail-image {
+  float: right;
+
+  background: no-repeat bottom center/100% url($napkin-path);
+  padding: 0 30px 30px;
+  min-height: 240px;
+  min-width: 200px;
+  
+  img {
+    display: block;
+    margin: 0 auto;
+
+    max-height: 300px;
+    max-width: 275px;
+  }
+}
+
+h1 {
+  // lines 21-26 are the same as from grid-box.scss. If this component should support other
+  // stylings. the below can be namespaced
+  color: $white;
+  font-size: $font-xxl;
+  font-weight: normal;
+  margin: -20px -20px 20px -20px;
+  padding: 20px;
+
+  .type {
+    opacity: 0.5;
+  }
+}
+
+ul {
+  &.ingredients {
+    li {
+      font-size: $font-md;
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,5 +1,4 @@
 @import "../_variables.scss";
-@import "./grid-box-cocktail-detail.scss";
 
 .box{
   background: $white;
@@ -13,6 +12,10 @@ h1 {
   font-weight: normal;
   margin: -20px -20px 20px -20px;
   padding: 20px;
+
+  &.reviews {
+    background-color: $gold;
+  }
 }
 
 h2 {
