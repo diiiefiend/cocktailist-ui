@@ -21,3 +21,10 @@ export interface ReviewItem {
   reviewer: string;
   timestamp: string;
 }
+
+export interface CoordinatePair {
+  x: number;
+  y: number;
+}
+
+export type ChartData = CoordinatePair[];

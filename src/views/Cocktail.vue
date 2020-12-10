@@ -45,8 +45,8 @@
             <scatter-chart
               :x-values="scatterChartData.xValues"
               :y-values="scatterChartData.yValues"
-              x-legend="spirited"
-              y-legend="innovative"
+              x-label="spirited"
+              y-label="innovative"
             ></scatter-chart>
             <div class="teaser-link">
               <a href="#!">View stats for {{ cocktail.type }} drinks</a>
@@ -96,8 +96,8 @@ export default {
       cocktail: mockCocktailDetailData,
       reviews: mockReviewData,
       scatterChartData: {
-        xValues: [5],
-        yValues: [6]
+        xValues: [4, 6],
+        yValues: [5, 7]
       }
     };
   }
