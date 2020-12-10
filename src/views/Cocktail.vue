@@ -42,7 +42,12 @@
               :showTotal="true"
               :totalRatings="cocktail.totalRatings"
             ></rating>
-            <div class="placeholder-box"></div>
+            <scatter-chart
+              :x-values="scatterChartData.xValues"
+              :y-values="scatterChartData.yValues"
+              x-legend="spirited"
+              y-legend="innovative"
+            ></scatter-chart>
             <div class="teaser-link">
               <a href="#!">View stats for {{ cocktail.type }} drinks</a>
             </div>
@@ -72,6 +77,7 @@ import GridBox from "@/components/GridBox.vue";
 import CocktailDetail from "@/components/CocktailDetail.vue";
 import ReviewList from "@/components/ReviewList.vue";
 import Rating from "@/components/Rating.vue";
+import ScatterChart from "@/components/ScatterChart.vue";
 
 export default {
   name: "Cocktail",
@@ -81,13 +87,18 @@ export default {
     GridBox,
     CocktailDetail,
     ReviewList,
-    Rating
+    Rating,
+    ScatterChart
   },
   data: function() {
     return {
       bar: mockBarData,
       cocktail: mockCocktailDetailData,
-      reviews: mockReviewData
+      reviews: mockReviewData,
+      scatterChartData: {
+        xValues: [5],
+        yValues: [6]
+      }
     };
   }
 };
