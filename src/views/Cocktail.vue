@@ -47,6 +47,7 @@
               :y-values="scatterChartData.yValues"
               x-label="spirited"
               y-label="innovative"
+              :is-drink-stats="true"
             ></scatter-chart>
             <div class="teaser-link">
               <a href="#!">View stats for {{ cocktail.type }} drinks</a>
