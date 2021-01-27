@@ -37,7 +37,7 @@ $lighter-black: lighten($black, 25%);
 
 // dimensions
 $app-width: 1000px;
-$app-min-width: 800px;
+$app-min-width: 960px;  // prevents wrapping on the context-menu until I get around to addressing that
 $header-height: 50px;
 $context-menu-height: 90px;
 $footer-height: 150px;

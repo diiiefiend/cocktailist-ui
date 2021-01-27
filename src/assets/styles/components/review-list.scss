@@ -19,11 +19,17 @@ ul {
       text-align: right;
     }
 
+    .timestamp {
+      font-size: $font-sm;
+      font-style: italic;
+      float: right;
+    }
+
     &::before, &::after {
       display: block;
       font-size: 64px;          // special case
       margin: 0 -30px;
-      opacity: 0.2;
+      opacity: 0.3;
     }
 
     &::before {

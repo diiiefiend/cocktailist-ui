@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 
-.box{
+.box {
   background: $white;
   line-height: 2em;
   padding: 20px;
@@ -21,6 +21,7 @@ h1 {
 h2 {
   font-size: $font-xl;
   font-weight: normal;
+  margin-top: 0;
 }
 
 ul {

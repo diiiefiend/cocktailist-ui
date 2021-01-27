@@ -6,9 +6,7 @@
         <button class="primary">Add Review</button>
         <button class="primary">Modify Lists</button>
       </div>
-      <div class="span-4">
-        Listed in: Done and Done
-      </div>
+      <div class="span-4">Listed in: <a href="">Done and Done</a></div>
       <div class="span-2 justify-right emerald">
         Last updated: 09.04.2020
       </div>
@@ -39,8 +37,9 @@
             <h2>Stats</h2>
             <rating
               :rating-value="cocktail.rating"
-              :showTotal="true"
-              :totalRatings="cocktail.totalRatings"
+              :show-total="true"
+              :total-ratings="cocktail.totalRatings"
+              :show-divider="true"
             ></rating>
             <scatter-chart
               :x-values="scatterChartData.xValues"
@@ -65,8 +64,9 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 // @ is an alias to /src
+import { ReviewItem } from "../models";
 import {
   mockCocktailDetailData,
   mockReviewData,
@@ -91,14 +91,24 @@ export default {
     Rating,
     ScatterChart
   },
+  props: {
+    id: {
+      type: String
+    }
+  },
   data: function() {
     return {
       bar: mockBarData,
-      cocktail: mockCocktailDetailData,
+      cocktail:
+        this.id === "1" ? mockCocktailDetailData[0] : mockCocktailDetailData[1],
       reviews: mockReviewData,
       scatterChartData: {
-        xValues: [4, 6],
-        yValues: [5, 7]
+        xValues: mockReviewData.map(
+          (review: ReviewItem) => review.spiritedRating
+        ),
+        yValues: mockReviewData.map(
+          (review: ReviewItem) => review.innovationRating
+        )
       }
     };
   }

@@ -33,7 +33,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 // @ is an alias to /src
 import { mockCocktailData } from "../mocks.js";
 import ContextMenu from "@/components/ContextMenu.vue";

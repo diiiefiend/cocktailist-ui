@@ -45,12 +45,11 @@ const mockCocktailData = [
   },
   {
     id: "6",
-    name: "Something Else Drink",
-    imgUrl:
-      "https://s3.amazonaws.com/cocktailist-pro/cocktails/imgs/000/000/008/small/queensparkswizzle.jpg",
-    bar: "wherever",
-    rating: 5,
-    type: "brandy"
+    name: "The Red Dragon",
+    imgUrl: "/images/test-drinks/red-dragon.jpg",
+    bar: "The Third Man",
+    rating: 3,
+    type: "baijiu"
   },
   {
     id: "7",
@@ -63,11 +62,18 @@ const mockCocktailData = [
   }
 ];
 
-const mockCocktailDetailData = {
-  ...mockCocktailData[0],
-  ingredients: "green chartreuse, gin, maraschino liqueur, lime juice",
-  totalRatings: 2
-};
+const mockCocktailDetailData = [
+  {
+    ...mockCocktailData[0],
+    ingredients: "green chartreuse, gin, maraschino liqueur, lime juice",
+    totalRatings: 2
+  },
+  {
+    ...mockCocktailData[5],
+    ingredients: "baijiu, lemon, watermelon, basil, green chartreuse",
+    totalRatings: 2
+  }
+];
 
 const mockBarData = {
   id: "1",
@@ -81,19 +87,19 @@ const mockReviewData = [
     cocktailId: 1,
     userId: 2,
     reviewer: "Ariel",
-    timestamp: "timestamp",
+    timestamp: "October 15th, 2020",
     rating: 4.5,
     spiritedRating: 4,
     innovationRating: 5,
     comment:
-      "Oh my, what a drink. I'm going to type a lot of gibberish right now blah blah blah. Man I wish I was using my mechanical keyboard to type all this right now; it's a lot more fun."
+      "That refreshing (cough cough) baijiu taste! I'm always curious about baijiu cocktails but so far haven't found one that particularly works well with the flavor."
   },
   {
     id: 456,
     cocktailId: 1,
     userId: 3,
     reviewer: "Frank",
-    timestamp: "timestamp",
+    timestamp: "September 10th, 2016",
     rating: 3,
     spiritedRating: 6,
     innovationRating: 7,

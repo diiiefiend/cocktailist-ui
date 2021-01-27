@@ -2,12 +2,17 @@
   <div>
     <h1 class="colored-by-type" :class="cocktail.type">
       {{ cocktail.name }}
-      <span class="type">({{ cocktail.type }})</span>
+      <span class="type">
+        <!-- eslint-disable-next-line -->
+        (<a href="">{{ cocktail.type }}</a>)
+      </span>
     </h1>
     <div class="cocktail-image">
       <img :src="cocktail.imgUrl" :alt="cocktail.name + ' image'" />
     </div>
-    <h2>from {{ cocktail.bar }}</h2>
+    <h2>
+      from <a href="">{{ cocktail.bar }}</a>
+    </h2>
     <h2>Ingredients:</h2>
     <ul class="ingredients">
       <li

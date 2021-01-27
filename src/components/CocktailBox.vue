@@ -4,7 +4,7 @@
     @mouseover="hovered = true"
     @mouseleave="hovered = false"
   >
-    <router-link to="/cocktail">
+    <router-link :to="'/cocktail/' + id">
       <h3 :class="{ hovered }">
         {{ name }}
       </h3>
@@ -36,6 +36,7 @@ export default class CocktailBox extends Vue {
 
   data() {
     return {
+      id: this.cocktail.id,
       name: this.cocktail.name,
       bar: this.cocktail.bar,
       rating: this.cocktail.rating,

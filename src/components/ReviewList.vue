@@ -9,6 +9,7 @@
       <br />
       <p>{{ review.comment }}</p>
       <div class="reviewer">{{ review.reviewer }}</div>
+      <div class="timestamp">on {{ review.timestamp }}</div>
     </li>
   </ul>
 </template>
